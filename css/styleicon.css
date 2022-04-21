@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'icons';
+  src:
+    url('../iconfonts/icons.ttf?hz8ley') format('truetype'),
+    url('../iconfonts/icons.woff?hz8ley') format('woff'),
+    url('../iconfonts/icons.svg?hz8ley#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-phone:before {
+  content: "\e900";
+  margin-right: 10px;
+}
+
+._icon-mail:before {
+  content: "\e901";
+  margin-right: 10px;
+}
+
+._icon-time:before {
+  content: "\e902";
+  margin-right: 10px;
+}
+
+._icon-map:before {
+  content: "\e903";
+  margin-right: 10px;
+}
