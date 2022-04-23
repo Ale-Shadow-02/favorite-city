@@ -35,6 +35,8 @@
 
 @import "reset";
 @import "header";
+@import "offer";
+@import "footer";
 
 body {
     font-family: "OpenSansSemiBold", Arial, Helvetica, sans-serif;
@@ -46,6 +48,7 @@ body {
 .wrapper {
     max-width: 1920px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .container {
