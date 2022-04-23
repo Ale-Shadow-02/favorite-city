@@ -1,153 +1,39 @@
-@charset "UTF-8";
-@font-face {
-  font-family: "OpenSansRegular";
-  src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OpenSansSemiBold";
-  src: url("../fonts/OpenSans-SemiBold.eot");
-  src: url("../fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype"), url("../fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OpenSansBold";
-  src: url("../fonts/OpenSans-Bold.eot");
-  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/**Обнуление*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-:focus,
-:active {
-  outline: none;
-}
-
-a:focus,
-a:active {
-  outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  line-height: 1;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
-/** Конец Обнуление стилей*/
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  background-color: #ff9e45;
+  background-color: #141820;
 }
 
 .header__container {
-  max-width: 1670px;
+  max-width: 1200px;
   margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px 10px;
+  padding: 0px 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 196px;
+  min-height: 100px;
 }
 
 .header__logo {
   border-radius: 50%;
   position: relative;
   z-index: 5;
+  width: 60px;
+  height: 60px;
 }
 
 .header__logo img {
-  width: 150px;
-  height: 126px;
+  width: 60px;
+  height: 60px;
 }
 
 .menu__icon {
@@ -160,26 +46,14 @@ h6 {
 }
 
 .menu__link {
-  font-family: "OpenSansBold";
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
+  font-size: 1rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.menu__link-phone {
-  font-family: "OpenSansBold";
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #ffffff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.menu__link:hover,
-.menu__link-phone:hover {
-  color: #952a2a;
+.menu__link:hover {
+  color: #01f0ff;
   text-decoration: underline;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -227,16 +101,6 @@ h6 {
 }
 
 @media (max-width: 992px) {
-  .menu__link-phone {
-    display: none;
-  }
-  .header__logo img {
-    width: 60px;
-    height: 50px;
-  }
-  .header__container {
-    min-height: 100px;
-  }
   .menu__icon {
     z-index: 5;
     display: block;
@@ -292,7 +156,7 @@ h6 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 130px 30px 30px 30px;
+    padding: 100px 30px 30px 30px;
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
     overflow: auto;
@@ -307,7 +171,7 @@ h6 {
     top: 0;
     left: 0;
     height: 100px;
-    background-color: #ff9e45;
+    background-color: #141820;
     z-index: 2;
   }
   .menu__list > li {
@@ -324,22 +188,4 @@ h6 {
   .menu__link {
     font-size: 1.5rem;
   }
-}
-
-body {
-  font-family: "OpenSansSemiBold", Arial, Helvetica, sans-serif;
-  background-color: #fff;
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-.wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.container {
-  max-width: 1670px;
-  margin: 0 auto;
-  padding: 0 10px;
 }

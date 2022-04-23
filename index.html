@@ -11,8 +11,37 @@
 </head>
 
 <body>
-    <span class="_icon-phone "></span>
-    <a href="#" class="link _icon-phone ">Тестирую иконку</a>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="/" class="header__logo">
+                    <img src="img/logo.svg" alt="LOGO">
+                </a>
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li><a data-goto=".offer" href="#" class="menu__link">Главная</a></li>
+                            <li><a data-goto=".page__section_2" href="#" class="menu__link">Услуги</a></li>
+                            <li><a data-goto=".page__section_3" href="#" class="menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <a href="tel:8482777739" class="menu__link-phone">(8482) 77-77-39</a>
+            </div>
+        </header>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <div class="footer__body-item footer__item-contact"></div>
+                    <div class="footer__body-item footer__item-logo"></div>
+                    <div class="footer__body-item footer__item-phone"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
