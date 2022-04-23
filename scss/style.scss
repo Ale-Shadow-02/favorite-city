@@ -34,9 +34,6 @@
 }
 
 @import "reset";
-@import "header";
-@import "offer";
-@import "footer";
 
 body {
     font-family: "OpenSansSemiBold", Arial, Helvetica, sans-serif;
@@ -56,3 +53,7 @@ body {
     margin: 0 auto;
     padding: 0 10px;
 }
+@import "adapfont";
+@import "header";
+@import "offer";
+@import "footer";

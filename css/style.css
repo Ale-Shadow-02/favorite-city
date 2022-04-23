@@ -114,6 +114,25 @@ h6 {
 }
 
 /** Конец Обнуление стилей*/
+body {
+  font-family: "OpenSansSemiBold", Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container {
+  max-width: 1670px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -393,21 +412,87 @@ h6 {
   padding: 100px 0;
 }
 
-body {
-  font-family: "OpenSansSemiBold", Arial, Helvetica, sans-serif;
-  background-color: #fff;
-  font-size: 20px;
-  line-height: 1.5;
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
-  height: 100%;
+.footer__body-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
 }
 
-.container {
-  max-width: 1670px;
-  margin: 0 auto;
-  padding: 0 10px;
+.footer__address, .footer__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__icon {
+  color: #fff;
+  font-size: calc(16px + 20 * ((100vw - 320px) / 1330));
+}
+
+.footer__text {
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1330));
+  color: #ffffff;
+}
+
+.footer__item-logo {
+  text-align: center;
+}
+
+.footer__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__link-logo > img {
+  width: 131px;
+  height: 110px;
+}
+
+.footer__link-phone {
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1330));
+  color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 30px 0;
+  }
+  .footer__link-logo > img {
+    width: 60px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__item-contact, .footer__item-logo {
+    margin: 0px 0px 20px 0px;
+  }
 }

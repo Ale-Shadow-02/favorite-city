@@ -1,4 +1,73 @@
 .footer {
     background: rgba(1, 18, 62, 0.8);
     padding: 100px 0;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__body-item {
+        flex: 0 1 33%;
+    }
+
+    &__address,
+    &__mail {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        color: #fff;
+        @include adaptiv-font(36, 16);
+    }
+
+    &__text {
+        @include adaptiv-font(20, 14);
+        color: #ffffff;
+    }
+
+    &__item-logo {
+        text-align: center;
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+    }
+    &__link-logo > img {
+        width: 131px;
+        height: 110px;
+    }
+
+    &__link-phone {
+        @include adaptiv-font(20, 14);
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        padding: 30px 0;
+        &__link {
+            &-logo > img {
+                width: 60px;
+                height: 50px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        &__body {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__item {
+            &-contact,
+            &-logo {
+                margin: 0px 0px 20px 0px;
+            }
+        }
+    }
 }
