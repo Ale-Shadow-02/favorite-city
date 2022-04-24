@@ -574,6 +574,10 @@ body {
   color: #ffffff;
 }
 
+.footer__text-mail:hover {
+  text-decoration: underline;
+}
+
 .footer__item-logo {
   text-align: center;
 }
@@ -595,6 +599,10 @@ body {
 .footer__link-phone {
   font-size: calc(14px + 6 * ((100vw - 320px) / 1330));
   color: #ffffff;
+}
+
+.footer__link-phone:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 992px) {

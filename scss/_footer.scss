@@ -25,6 +25,11 @@
     &__text {
         @include adaptiv-font(20, 14);
         color: #ffffff;
+        &-mail {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     &__item-logo {
@@ -43,6 +48,9 @@
     &__link-phone {
         @include adaptiv-font(20, 14);
         color: #ffffff;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
