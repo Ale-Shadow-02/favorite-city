@@ -532,6 +532,32 @@ body {
   }
 }
 
+.contacts {
+  padding: 7vw 0px 7vw 0px;
+}
+
+.contacts__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__icon {
+  display: block;
+}
+
 .footer {
   background: rgba(1, 18, 62, 0.8);
   padding: 100px 0;

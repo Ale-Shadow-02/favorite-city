@@ -1,0 +1,26 @@
+.contacts {
+    padding: 7vw 0px 7vw 0px;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+    }
+
+    &__item-content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        display: block;
+    }
+
+    &__text {
+    }
+
+    &__item-map {
+    }
+}
