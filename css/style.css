@@ -472,6 +472,15 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.services__item-body:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .services__item-content {
