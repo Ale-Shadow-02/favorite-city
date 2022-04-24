@@ -34,6 +34,7 @@
 }
 
 @import "reset";
+@import "adapfont";
 
 body {
     font-family: "OpenSansSemiBold", Arial, Helvetica, sans-serif;
@@ -53,7 +54,16 @@ body {
     margin: 0 auto;
     padding: 0 10px;
 }
-@import "adapfont";
+.section__title {
+    font-size: 80px;
+    @include adaptiv-font(80, 26);
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin: 0px 0px 7vw 0px;
+}
+
 @import "header";
 @import "offer";
+@import "services";
 @import "footer";
