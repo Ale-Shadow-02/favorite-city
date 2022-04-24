@@ -4,6 +4,7 @@
     &__body {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__item {
@@ -15,12 +16,24 @@
     }
 
     &__icon {
-        display: block;
+        font-size: 40px;
     }
 
-    &__text {
+    &__text-link {
+        color: #000000;
+        @include adaptiv-font(20, 14);
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__item-map {
+        max-width: 1090px;
+        height: 590px;
+    }
+    &__phone {
+        &-wrap {
+            margin: 20px 0px 20px 0px;
+        }
     }
 }

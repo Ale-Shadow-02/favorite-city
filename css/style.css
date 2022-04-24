@@ -543,6 +543,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contacts__item-content {
@@ -555,7 +558,25 @@ body {
 }
 
 .contacts__icon {
-  display: block;
+  font-size: 40px;
+}
+
+.contacts__text-link {
+  color: #000000;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1330));
+}
+
+.contacts__text-link:hover {
+  text-decoration: underline;
+}
+
+.contacts__item-map {
+  max-width: 1090px;
+  height: 590px;
+}
+
+.contacts__phone-wrap {
+  margin: 20px 0px 20px 0px;
 }
 
 .footer {
