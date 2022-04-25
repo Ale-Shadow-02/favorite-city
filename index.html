@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleicon.css">
     <title>Любимый город</title>
@@ -14,7 +21,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <a href="/" class="header__logo">
+                <a href="index.html" class="header__logo">
                     <img src="img/logo.svg" alt="LOGO">
                 </a>
                 <div class="header__menu menu">
@@ -25,7 +32,7 @@
                         <ul class="menu__list">
                             <li><a data-goto=".offer" href="#" class="menu__link">Главная</a></li>
                             <li><a data-goto=".services" href="#" class="menu__link">Услуги</a></li>
-                            <li><a data-goto=".page__section_3" href="#" class="menu__link">Контакты</a></li>
+                            <li><a data-goto=".contacts" href="#" class="menu__link">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -39,11 +46,11 @@
                 <h1 class="offer__title">Любимый Город</h1>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <h2 class="section__title">Услуги</h2>
                 <div class="services__body">
-                    <div onclick="location.href='https://google.com';" class="services__item">
+                    <div onclick="location.href='services.html';" class="services__item">
                         <div class="services__item-body">
                             <div class="services__item-img">
                                 <img src="img/image_1.svg" alt="Дом с ключами">
@@ -55,7 +62,7 @@
                             </div>
                         </div>
                     </div>
-                    <div onclick="location.href='https://google.com';" class="services__item">
+                    <div onclick="location.href='';" class="services__item">
                         <div class="services__item-body">
                             <div class="services__item-img">
                                 <img src="img/image_2.svg" alt="Дом на руку">
@@ -96,15 +103,21 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
                 <h2 class="section__title">Контакты</h2>
                 <div class="contacts__body">
-                    <div class="contacts__item">
-                        <div class="contacts__item-content">
-                            <span class="contacts__icon _icon-map"></span>
-                            <p class="contacts__text">Ул. Дзержинского, 38
-                                (напротив отс. “Снежная королева”)</p>
+                    <div class="contacts__item-address">
+                        <div class="contacts__address-wrap">
+                            <div class="contacts__item-content">
+                                <span class="contacts__icon _icon-map"></span>
+                                <p class="contacts__text">Ул. Дзержинского, 38<br>
+                                    (напротив отс. “Снежная королева”)</p>
+                            </div>
+                            <div class="contacts__item-content contacts__mail">
+                                <span class="contacts__icon _icon-mail"></span>
+                                <a href="mailto:l.city@mail.ru" class="contacts__text-link">l.city@mail.ru</a>
+                            </div>
                         </div>
                         <div class="contacts__phone-wrap">
                             <div class="contacts__item-content">
@@ -121,10 +134,6 @@
                             </div>
                         </div>
                         <div class="contacts__item-content">
-                            <span class="contacts__icon _icon-mail"></span>
-                            <a href="mailto:l.city@mail.ru" class="contacts__text-link">l.city@mail.ru</a>
-                        </div>
-                        <div class="contacts__item-content">
                             <span class="contacts__icon _icon-time"></span>
                             <p class="contacts__text">Будни - с 10 00 до 18 00<br>
                                 Суббота - с 10 00 до 15 00<br>
@@ -132,12 +141,10 @@
                             </p>
                         </div>
                     </div>
-                    <div class="contacts__item">
-                        <div class="contacts__item-map">
-                            <script type="text/javascript" charset="utf-8" async
-                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A651fbbd779eb2a7daddc83ab657d4feda0ec39dc93341bfb7472fef792b155f6&amp;width=1090&amp;height=590&amp;lang=ru_RU&amp;scroll=false">
-                            </script>
-                        </div>
+                    <div class="contacts__item-map">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A651fbbd779eb2a7daddc83ab657d4feda0ec39dc93341bfb7472fef792b155f6&amp;width=100%25&amp;height=590&amp;lang=ru_RU&amp;scroll=false">
+                        </script>
                     </div>
                 </div>
             </div>
@@ -174,6 +181,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="footer__icon-top">
+                <img src="img/arrow_top.png" class="footer__icon-arrow" alt="Стпелка в верх">
             </div>
         </footer>
     </div>

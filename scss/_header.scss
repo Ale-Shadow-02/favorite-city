@@ -53,22 +53,6 @@
     text-decoration: underline;
     transition: 0.3s;
 }
-.social {
-    background-color: #2b2bff;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    color: #dadada;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-    &:hover {
-        background: #dadada;
-        color: #2b2bff;
-        transition: 0.3s;
-    }
-}
 
 /* ----------------------- */
 @media (min-width: 992px) {
