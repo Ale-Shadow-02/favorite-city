@@ -632,6 +632,10 @@ body {
           flex: 0 1 20%;
 }
 
+.page__sale-title {
+  width: 200px;
+}
+
 .page__image {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 70%;
