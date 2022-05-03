@@ -638,8 +638,8 @@ body {
 
 .page__image {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 70%;
-          flex: 0 1 70%;
+      -ms-flex: 0 1 65%;
+          flex: 0 1 65%;
 }
 
 .page__image img {
