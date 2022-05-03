@@ -10,34 +10,33 @@
 		});
 	}
 
-	// Прокрутка при клике
-	const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
-	if (menuLinks.length > 0) {
-		menuLinks.forEach(menuLink => {
-			menuLink.addEventListener("click", onMenuLinkClick);
-		});
+document.querySelectorAll('a[href^="#"').forEach(link => {
 
-		function onMenuLinkClick(e) {
-			const menuLink = e.target;
-			if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-				const gotoBlock = document.querySelector(menuLink.dataset.goto);
-				const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollX - document.querySelector('header').offsetHeight;
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
 
-				if (iconMenu.classList.contains('_active')) {
-					document.body.classList.remove('_lock');
-					iconMenu.classList.remove('_active');
-					menuBody.classList.remove('_active');
-				}
+        let href = this.getAttribute('href').substring(1);
 
-				window.scrollTo({
-					top: gotoBlockValue,
-					behavior: "smooth"
-				});
-				e.preventDefault();
+        const scrollTarget = document.getElementById(href);
+
+        const topOffset = document.querySelector('.header').offsetHeight;
+        // const topOffset = 0; // если не нужен отступ сверху 
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+		const offsetPosition = elementPosition - topOffset;
+		
+		if (iconMenu.classList.contains('_active')) {
+				document.body.classList.remove('_lock');
+				iconMenu.classList.remove('_active');
+				menuBody.classList.remove('_active');
 			}
-		}
-}
-	
+
+        window.scrollBy({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+
 // Scroll To top
 
 let topBtn = document.querySelector('.footer__icon-top');
